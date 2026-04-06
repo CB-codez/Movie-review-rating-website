@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MRW | Review Movie</title>
+  <link rel="stylesheet" href="/css/Style.css">
+</head>
+<body class="page-review">
+  <div class="page-shell">
+    <main class="content-stack">
+      <section class="form-layout">
+        <div class="form-card wide">
+          <p class="eyebrow">Review Page</p>
+          <h1>Review your selected movie</h1>
+          <p>Movie name, description, review text, and star rating are all included here.</p>
+
+          <form id="reviewForm" class="stack-form">
+            <input type="text" id="movieName" name="movieName" placeholder="Movie name" required>
+            <textarea id="description" name="description" placeholder="Movie description" required></textarea>
+            <select id="rating" name="rating" required>
+              <option value="">Choose rating</option>
+              <option value="1">1 Star</option>
+              <option value="2">2 Stars</option>
+              <option value="3">3 Stars</option>
+              <option value="4">4 Stars</option>
+              <option value="5">5 Stars</option>
+            </select>
+            <textarea id="reviewText" name="reviewText" placeholder="Write your review" required></textarea>
+            <button class="button primary" type="submit">Submit Review</button>
+          </form>
+
+          <p class="status-text" id="reviewStatus"></p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>

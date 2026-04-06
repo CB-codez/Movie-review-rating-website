@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign In</title>
+<style>
+body{
+    margin:0;
+    font-family:Arial;
+    background:url('https://images.unsplash.com/photo-1517602302552-471fe67acf66') no-repeat center/cover;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.box{
+    background:rgba(0,0,0,0.8);
+    padding:40px;
+    color:white;
+    text-align:center;
+    border-radius:10px;
+    width:300px;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border:none;
+    border-radius:5px;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    background:green;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+a{
+    color:white;
+    text-decoration:none;
+    display:block;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<div class="box">
+    <h2>Sign Up</h2>
+    <form action="/webpage" method="post">
+        <input type="text" placeholder="Username">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <button type="submit" onclick="goHome()">Register</button>
+    </form>
+    <a href="login.html">Back to login</a>
+</div>
+
+<script>
+function goHome(){
+    window.location.href="login.html";
+}
+</script>
+
+</body>
+</html>
